@@ -1,4 +1,4 @@
-Реализованый магазин на Django c бозой данных PostgreSql
+Реализованый магазин на Django c базой данных PostgreSql
 
 
 
