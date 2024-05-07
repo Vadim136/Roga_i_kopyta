@@ -1,0 +1,656 @@
+[
+    {
+      "model": "goods.products",
+      "pk": 1,
+      "fields": {
+        "name": "Корм для собак \"Премиум\"",
+        "slug": "korm-dlya-sobak-premium",
+        "description": "Высококачественный корм для собак премиум-класса, содержащий все необходимые витамины и минералы.",
+        "image": "",
+        "price": "1000.00",
+        "quantity": 12,
+        "category": 2
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 2,
+      "fields": {
+        "name": "Корм для кошек \"Фишь и деликатесы\"",
+        "slug": "korm-dlya-koshek-fish-i-delikatesy",
+        "description": "Вкусный корм для кошек с рыбой, богатый белками и омега-3 жирными кислотами.",
+        "image": "",
+        "price": "800.00",
+        "quantity": 6,
+        "category": 2
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 3,
+      "fields": {
+        "name": "Вольер для кроликов \"Комфорт\"",
+        "slug": "voler-dlya-krolikov-komfort",
+        "description": "Просторный вольер для кроликов с несколькими ярусами и местом для сна.",
+        "image": "",
+        "price": "3000.00",
+        "quantity": 4,
+        "category": 3
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 4,
+      "fields": {
+        "name": "Игрушка для собак \"Мячик-свистунок\"",
+        "slug": "igrushka-dlya-sobak-myachik-svistunok",
+        "description": "Мягкий мячик-свистунок для собак, который поможет развивать зубы и удовлетворит инстинкт охоты.",
+        "image": "",
+        "price": "300.00",
+        "quantity": 10,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 5,
+      "fields": {
+        "name": "Лоток для питья \"Аква-комфорт\"",
+        "slug": "lotok-dlya-pitya-akva-komfort",
+        "description": "Лотки для питья с автоматическим поддержанием уровня воды, подходят для собак и кошек.",
+        "image": "",
+        "price": "1500.00",
+        "quantity": 12,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 6,
+      "fields": {
+        "name": "Поводки для собак \"Кожаная роскошь\"",
+        "slug": "povodki-dlya-sobak-kozhanaya-roskosh",
+        "description": "Элегантные кожаные поводки для собак, изготовленные из натуральной кожи.",
+        "image": "",
+        "price": "1300.00",
+        "quantity": 8,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 7,
+      "fields": {
+        "name": "Средство от запахов \"Фреш\"",
+        "slug": "sredstvo-ot-zapahov-fresh",
+        "description": "Средство для устранения неприятных запахов в местах пребывания животных, не содержащее агрессивных химикатов.",
+        "image": "",
+        "price": "1000.00",
+        "quantity": 9,
+        "category": 6
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 8,
+      "fields": {
+        "name": "Средство от паразитов \"Безопасность\"",
+        "slug": "sredstvo-ot-parazitov-bezopasnost",
+        "description": "Эффективное средство от паразитов для собак и кошек, не содержащее агрессивных химикатов и обеспечивающее долгосрочную защиту.",
+        "image": "",
+        "price": "500.00",
+        "quantity": 4,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 9,
+      "fields": {
+        "name": "Корм для попугаев \"Экзотика\"",
+        "slug": "korm-dlya-popugayev-ekzotika",
+        "description": "Сбалансированный корм для попугаев с фруктами и орехами.",
+        "image": "",
+        "price": "700.00",
+        "quantity": 15,
+        "category": 2
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 10,
+      "fields": {
+        "name": "Клетка для хомяков \"Сладкий домик\"",
+        "slug": "kletka-dlya-khomyakov-sladkiy-domik",
+        "description": "Уютная клетка для хомяков с несколькими ярусами и местом для сна.",
+        "image": "",
+        "price": "2000.00",
+        "quantity": 7,
+        "category": 3
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 11,
+      "fields": {
+        "name": "Игрушка для кошек \"Мышь-погоня\"",
+        "slug": "igrushka-dlya-koshek-mysh-pogonya",
+        "description": "Интерактивная игрушка для кошек в виде мыши, развивающая охотничьи навыки.",
+        "image": "",
+        "price": "250.00",
+        "quantity": 16,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 12,
+      "fields": {
+        "name": "Ошейник для собак \"Светодиодный\"",
+        "slug": "osheynik-dlya-sobak-svetodiodnyy",
+        "description": "Светодиодный ошейник для собак, обеспечивающий видимость в темное время суток.",
+        "image": "",
+        "price": "1100.00",
+        "quantity": 3,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 13,
+      "fields": {
+        "name": "Щетка для кошек \"Антистатическая\"",
+        "slug": "shhetka-dlya-koshek-antistaticheskaya",
+        "description": "Антистатическая щетка для кошек, эффективно удаляющая шерсть и предотвращающая образование колтунов.",
+        "image": "",
+        "price": "600.00",
+        "quantity": 11,
+        "category": 6
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 14,
+      "fields": {
+        "name": "Препарат от глистов \"Антигельминт\"",
+        "slug": "preparat-ot-glistov-antigelmint",
+        "description": "Эффективный препарат от глистов для собак и кошек.",
+        "image": "",
+        "price": "450.00",
+        "quantity": 8,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 15,
+      "fields": {
+        "name": "Корм для попугаев \"Тропикан\"",
+        "slug": "korm-dlya-popugayev-tropikan",
+        "description": "Сбалансированный корм для попугаев с фруктами, орехами и семенами.",
+        "image": "",
+        "price": "650.00",
+        "quantity": 17,
+        "category": 2
+      }
+    },
+    {
+        "model": "goods.products",
+        "pk": 16,
+        "fields": {
+        "name": "Витаминный комплекс \"Активность и здоровье\"",
+        "slug": "vitaminnyy-kompleks-aktivnost-i-zdorove",
+        "description": "Витаминный комплекс для собак и кошек, способствующий поддержанию активности и здоровья.",
+        "image": "",
+        "price": "900.00",
+        "quantity": 13,
+        "category": 7
+    }
+    },
+    {
+      "model": "goods.products",
+      "pk": 17,
+      "fields": {
+        "name": "Корм для щенков \"Малыш\"",
+        "slug": "korm-dlya-shthenkov-malysh",
+        "description": "Особый корм для щенков с балансом питательных веществ для здорового роста.",
+        "image": "",
+        "price": "900.00",
+        "quantity": 22,
+        "category": 2
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 18,
+      "fields": {
+        "name": "Клетка для птиц \"Оазис\"",
+        "slug": "kletka-dlya-ptits-oazis",
+        "description": "Просторная клетка для птиц с местом для сна и кормушки.",
+        "image": "",
+        "price": "2500.00",
+        "quantity": 5,
+        "category": 3
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 19,
+      "fields": {
+        "name": "Игрушка для кошек \"Шарик-колокольчик\"",
+        "slug": "igrushka-dlya-koshek-sharik-kolokolchik",
+        "description": "Мягкий шарик с колокольчиком для кошек, развивающий охотничьи навыки.",
+        "image": "",
+        "price": "200.00",
+        "quantity": 25,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 20,
+      "fields": {
+        "name": "Поводок для собак \"Ультра Прочь\"",
+        "slug": "povodok-dlya-sobak-ultra-proch",
+        "description": "Прочный поводок для собак из высококачественного материала.",
+        "image": "",
+        "price": "900.00",
+        "quantity": 18,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 21,
+      "fields": {
+        "name": "Средство от блох и клещей \"Защита\"",
+        "slug": "sredstvo-ot-bloh-i-kleshey-zashchita",
+        "description": "Эффективное средство от блох и клещей для собак и кошек.",
+        "image": "",
+        "price": "700.00",
+        "quantity": 10,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 22,
+      "fields": {
+        "name": "Корм для хомяков \"Фитнес\"",
+        "slug": "korm-dlya-khomyakov-fitnes",
+        "description": "Сбалансированный корм для хомяков с овощами и семенами.",
+        "image": "",
+        "price": "500.00",
+        "quantity": 30,
+        "category": 2
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 23,
+      "fields": {
+        "name": "Клетка для морских свинок \"Комфорт плюс\"",
+        "slug": "kletka-dlya-morskikh-svinok-komfort-plyus",
+        "description": "Просторная клетка для морских свинок с несколькими ярусами и местом для сна.",
+        "image": "",
+        "price": "3500.00",
+        "quantity": 3,
+        "category": 3
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 24,
+      "fields": {
+        "name": "Игрушка для собак \"Фрисби\"",
+        "slug": "igrushka-dlya-sobak-frisbi",
+        "description": "Легкое и прочное фрисби для собак, идеальное для активных игр.",
+        "image": "",
+        "price": "400.00",
+        "quantity": 14,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 25,
+      "fields": {
+        "name": "Лоток для еды \"Аппетит\"",
+        "slug": "lotok-dlya-edy-appetit",
+        "description": "Удобный лоток для еды из нержавеющей стали для собак и кошек.",
+        "image": "",
+        "price": "600.00",
+        "quantity": 28,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 26,
+      "fields": {
+        "name": "Корм для кошек \"Супер Фит\"",
+        "slug": "korm-dlya-koshek-super-fit",
+        "description": "Корм для кошек с низким содержанием углеводов и высоким содержанием белка.",
+        "image": "",
+        "price": "1100.00",
+        "quantity": 16,
+        "category": 2
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 27,
+      "fields": {
+        "name": "Клетка для декоративных крыс \"Роскошь\"",
+        "slug": "kletka-dlya-dekorativnyh-krys-roskosh",
+        "description": "Просторная клетка для декоративных крыс с несколькими ярусами и местом для сна.",
+        "image": "",
+        "price": "4000.00",
+        "quantity": 2,
+        "category": 3
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 28,
+      "fields": {
+        "name": "Игрушка для собак \"Пружина\"",
+        "slug": "igrushka-dlya-sobak-pruzhina",
+        "description": "Пружинящая игрушка для собак, развивающая зубы и удовлетворяющая инстинкт охоты.",
+        "image": "",
+        "price": "350.00",
+        "quantity": 9,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 29,
+      "fields": {
+        "name": "Ошейник для кошек \"Светоотражающий\"",
+        "slug": "osheynik-dlya-koshek-svetootrazhayushchiy",
+        "description": "Светоотражающий ошейник для кошек, обеспечивающий безопасность в темное время суток.",
+        "image": "",
+        "price": "800.00",
+        "quantity": 19,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 30,
+      "fields": {
+        "name": "Средство от нечистот \"Чистота\"",
+        "slug": "sredstvo-ot-nechistot-chistota",
+        "description": "Средство для ухода за местом пребывания животных, эффективно удаляющее нечистоты и неприятные запахи.",
+        "image": "",
+        "price": "1000.00",
+        "quantity": 7,
+        "category": 6
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 31,
+      "fields": {
+        "name": "Препарат от блох \"Антиблоха\"",
+        "slug": "preparat-ot-bloh-antibloha",
+        "description": "Эффективный препарат от блох для собак и кошек.",
+        "image": "",
+        "price": "600.00",
+        "quantity": 13,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 32,
+      "fields": {
+        "name": "Корм для попугаев \"Джунгли\"",
+        "slug": "korm-dlya-popugayev-djungli",
+        "description": "Сбалансированный корм для попугаев с фруктами, орехами и семенами.",
+        "image": "",
+        "price": "850.00",
+        "quantity": 21,
+        "category": 2
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 33,
+      "fields": {
+        "name": "Клетка для хорьков \"Комфорт плюс\"",
+        "slug": "kletka-dlya-horikov-komfort-plyus",
+        "description": "Просторная клетка для хорьков с несколькими ярусами и местом для сна.",
+        "image": "",
+        "price": "3000.00",
+        "quantity": 1,
+        "category": 3
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 34,
+      "fields": {
+        "name": "Игрушка для кошек \"Лазерная точка\"",
+        "slug": "igrushka-dlya-koshek-lazernaya-tochka",
+        "description": "Интерактивная лазерная игрушка для кошек, развивающая охотничьи навыки.",
+        "image": "",
+        "price": "300.00",
+        "quantity": 27,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 35,
+      "fields": {
+        "name": "Поводок для собак \"Рефлектирующий\"",
+        "slug": "povodok-dlya-sobak-reflektiruyushchiy",
+        "description": "Рефлектирующий поводок для собак, обеспечивающий видимость в темное время суток.",
+        "image": "",
+        "price": "1200.00",
+        "quantity": 5,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 36,
+      "fields": {
+        "name": "Корм для рыб \"Аквариум\"",
+        "slug": "korm-dlya-ryb-akvarium",
+        "description": "Сбалансированный корм для аквариумных рыб, содержащий все необходимые витамины и минералы.",
+        "image": "",
+        "price": "400.00",
+        "quantity": 15,
+        "category": 2
+      }
+    },
+    {
+        "model": "goods.products",
+        "pk": 37,
+        "fields": {
+          "name": "Корм для черепах \"Акватерра\"",
+          "slug": "korm-dlya-cherepat-akvaterra",
+          "description": "Специальный корм для черепах, содержащий все необходимые витамины и минералы.",
+          "image": "",
+          "price": "1200.00",
+          "quantity": 8,
+          "category": 2
+        }
+    },
+    {
+      "model": "goods.products",
+      "pk": 38,
+      "fields": {
+        "name": "Корм для собак \"Активность\"",
+        "slug": "korm-dlya-sobak-aktivnost",
+        "description": "Корм для собак с высоким содержанием белка для активных пород.",
+        "image": "",
+        "price": "1300.00",
+        "quantity": 24,
+        "category": 2
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 39,
+      "fields": {
+        "name": "Клетка для птиц \"Экзотика\"",
+        "slug": "kletka-dlya-ptits-ekzotika",
+        "description": "Клетка для экзотических птиц с местом для сна и кормушки.",
+        "image": "",
+        "price": "5000.00",
+        "quantity": 1,
+        "category": 3
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 40,
+      "fields": {
+        "name": "Игрушка для кошек \"Мышь в клетке\"",
+        "slug": "igrushka-dlya-koshek-mysh-v-kletke",
+        "description": "Интерактивная игрушка для кошек в виде мыши в клетке, развивающая охотничьи навыки.",
+        "image": "",
+        "price": "400.00",
+        "quantity": 12,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 41,
+      "fields": {
+        "name": "Поводок для собак \"Мультифункциональный\"",
+        "slug": "povodok-dlya-sobak-multifunktsionalnyy",
+        "description": "Мультифункциональный поводок для собак с регулируемой длиной и отражающими элементами.",
+        "image": "",
+        "price": "1500.00",
+        "quantity": 3,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 42,
+      "fields": {
+        "name": "Средство от грязи \"Чистота плюс\"",
+        "slug": "sredstvo-ot-gryazi-chistota-plyus",
+        "description": "Средство для ухода за местом пребывания животных, эффективно удаляющее грязь и неприятные запахи.",
+        "image": "",
+        "price": "1200.00",
+        "quantity": 6,
+        "category": 6
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 43,
+      "fields": {
+        "name": "Препарат от клещей \"Антиклещ\"",
+        "slug": "preparat-ot-kleshey-antikleshch",
+        "description": "Эффективный препарат от клещей для собак и кошек.",
+        "image": "",
+        "price": "700.00",
+        "quantity": 20,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 44,
+      "fields": {
+        "name": "Корм для черепах \"Экзотика\"",
+        "slug": "korm-dlya-cherepat-ekzotika",
+        "description": "Специальный корм для черепах, содержащий все необходимые витамины и минералы.",
+        "image": "",
+        "price": "1400.00",
+        "quantity": 4,
+        "category": 2
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 45,
+      "fields": {
+        "name": "Клетка для декоративных кроликов \"Люкс\"",
+        "slug": "kletka-dlya-dekorativnyh-krolikov-lyuks",
+        "description": "Просторная и удобная клетка для декоративных кроликов с несколькими ярусами и местом для сна.",
+        "image": "",
+        "price": "6000.00",
+        "quantity": 1,
+        "category": 3
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 46,
+      "fields": {
+        "name": "Игрушка для собак \"Мячик-автомат\"",
+        "slug": "igrushka-dlya-sobak-myachik-avtomat",
+        "description": "Интерактивная игрушка для собак в виде мячика-автомата, развивающая интеллект.",
+        "image": "",
+        "price": "500.00",
+        "quantity": 30,
+        "category": 4
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 47,
+      "fields": {
+        "name": "Ошейник для кошек \"Умный\"",
+        "slug": "osheynik-dlya-koshek-umnyy",
+        "description": "Умный ошейник для кошек с GPS-трекингом и мониторингом активности.",
+        "image": "",
+        "price": "2000.00",
+        "quantity": 8,
+        "category": 5
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 48,
+      "fields": {
+        "name": "Средство от волос \"Антиволос\"",
+        "slug": "sredstvo-ot-volos-antivolos",
+        "description": "Средство для ухода за местом пребывания животных, эффективно удаляющее шерсть и волосы.",
+        "image": "",
+        "price": "900.00",
+        "quantity": 17,
+        "category": 6
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 49,
+      "fields": {
+        "name": "Препарат от гельминтов \"Антигельминт\"",
+        "slug": "preparat-ot-gelmintov-antigelmint",
+        "description": "Эффективный препарат от гельминтов для собак и кошек.",
+        "image": "",
+        "price": "800.00",
+        "quantity": 11,
+        "category": 7
+      }
+    },
+    {
+      "model": "goods.products",
+      "pk": 50,
+      "fields": {
+        "name": "Корм для морских свинок \"Фитнес\"",
+        "slug": "korm-dlya-morskikh-svinok-fitnes",
+        "description": "Сбалансированный корм для морских свинок с овощами и семенами.",
+        "image": "",
+        "price": "600.00",
+        "quantity": 23,
+        "category": 2
+      }
+    }
+  ]
+    
+
+  
+  

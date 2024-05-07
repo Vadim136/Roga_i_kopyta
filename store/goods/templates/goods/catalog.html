@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<!-- Стиль footer-a для главной страницы -->
+{% block css %}
+  <link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}" />
+{% endblock %}
+
+{% block content %}
+  <!-- Контент на странице -->
+  <div class="row">
+    <!-- Форма фильтров -->
+    <div class="dropdown mb-2">
+      <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Фильтры</button>
+      <form action="{% if request.GET.q %}{% url "catalog:search" %}{% else %}{% url "catalog:index" slug_url %}{% endif %} " method="get" 
+      class="dropdown-menu bg-dark" data-bs-theme="dark">
+        <div class="form-check text-white mx-3">
+          {% if request.GET.q %}
+          <input type="hidden" name="q" value="{{request.GET.q}}" />
+          {% endif %}
+        </div>
+        <p class="text-white mx-5 mt-1">Сортировать по цене:</p>
+        <div class="form-group">
+          <input type="text" class="form-control" id="price_sort" name="price_sort" placeholder="Введите цену" value="{{ request.GET.price_sort }}">
+        </div>
+        <div class="form-check text-white mx-3">
+          <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault1" value="default" {% if not request.GET.order_by or request.GET.order_by == 'default' %}checked{% endif %}/>
+          <label class="form-check-label" for="flexRadioDefault1">По умолчанию</label>
+        </div>
+        <div class="form-check text-white mx-3">
+          <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault2" value="price" {% if request.GET.order_by == 'price' %}checked{% endif  %}/>
+          <label class="form-check-label" for="flexRadioDefault2">От дешевых к дорогим</label>
+        </div>
+        <div class="form-check text-white mx-3">
+          <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault3" value="-price" {% if request.GET.order_by == '-price' %}checked{% endif  %}/>
+          <label class="form-check-label" for="flexRadioDefault3">От дорогих к дешевым</label>
+        </div>
+        <button type="submit" class="btn btn-primary mx-3 mt-3">Применить</button>
+      </form>
+    </div>
+    {% if request.GET.q %}
+    <h3 class="mt-4">Результаты поиска по запросу {{ request.GET.q }}</h3>
+    {% if not goods %}
+        <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+        <h2 class="mt-4">По запросу ничего не найдено</h2>
+    {% endif %}
+    {% endif %}
+    {% for product in goods %}
+      <!-- Карта товара -->
+      <div class="col-lg-4 col-md-6 p-4">
+        <div class="card border-primary rounded custom-shadow">
+          {% if product.image %}
+            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}" />
+          {% else %}
+            <img src="{% static '/deps/images/not_found_image.jpg' %}" class="card-img-top" alt="..." />
+          {% endif %}
+          <div class="card-body">
+            <a href="{% url 'catalog:product' product.slug %}"><p class="card-title">{{ product.name }}</p></a>
+            <p class="card-text text-truncate">{{ product.discription }}</p>
+            <p class="product_id">id:{{ product.display_id }}</p>
+            <div class="d-flex justify-content-between">
+              <p>
+                <strong>{{ product.price }} ₽</strong>
+              </p>
+              <a href="#" class="btn add-to-cart"><img class="mx-1" src="{% static '/deps/icons/cart-plus.svg' %}" alt="Catalog Icon" width="32" height="32" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+   
+{% endblock %}
+
+{% block footer %}
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; 'Roga&amp;Kopyta 2024'</p>
+    </div>
+  </footer>
+{% endblock %}
