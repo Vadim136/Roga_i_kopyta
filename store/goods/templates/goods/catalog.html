@@ -47,10 +47,10 @@
     </div>
     {% if request.GET.q %}
     <h3 class="mt-4">Результаты поиска по запросу {{ request.GET.q }}</h3>
-    {% if not goods %}
+      {% if not goods %}
         <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
         <h2 class="mt-4">По запросу ничего не найдено</h2>
-    {% endif %}
+      {% endif %}
     {% endif %}
     {% for product in goods %}
       <!-- Карта товара -->
@@ -69,7 +69,9 @@
               <p>
                 <strong>{{ product.price }} ₽</strong>
               </p>
-              <a href="{% url "cart:cart_add" product.slug%}" class="btn add-to-cart"><img class="mx-1" src="{% static '/deps/icons/cart-plus.svg' %}" alt="Catalog Icon" width="32" height="32" /></a>
+              <a href="{% url "cart:cart_add" %}" class="btn add-to-cart" product-id="{{product.id}}">
+              {% csrf_token %}
+                <img class="mx-1" src="{% static '/deps/icons/cart-plus.svg' %}" alt="Catalog Icon" width="32" height="32" /></a>
             </div>
           </div>
         </div>
